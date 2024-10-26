@@ -32,7 +32,7 @@ namespace Service_Auth
             builder.Services.AddControllers(options =>
             {
                 options.Filters.Add<CentralizedExceptionHandlingFilter>();
-            });
+            });   
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
