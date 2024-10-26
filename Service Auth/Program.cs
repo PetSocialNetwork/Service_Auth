@@ -25,7 +25,7 @@ namespace Service_Auth
             {
                 throw new InvalidOperationException("JwtConfig is not configured");
             }
-            builder.Services.AddSingleton(jwtConfig);
+            builder.Services.AddSingleton(jwtConfig);  
 
             builder.Services.AddCors();
             builder.Services.AddControllers();
